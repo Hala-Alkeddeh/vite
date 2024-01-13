@@ -1,0 +1,24 @@
+.s5{
+    display: flex;
+    padding: 100px 70px;
+    justify-content: center;
+    align-items: center;
+    background: no-repeat;
+    background-size: cover;
+}
+.s5 h1{
+    color: #FFF;
+    font-family: Yesteryear;
+    font-size: 157.426px;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 223.678px;
+}
+.s5 img{
+    cursor: pointer;
+}
+@media screen and ( max-width : 992px ) {
+    .s5{padding: 40px 20px;}
+    .s5 h1{font-size: 75px;}
+    .s5 img{width: 85px;}
+}

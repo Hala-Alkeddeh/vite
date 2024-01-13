@@ -1,0 +1,106 @@
+nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 70px;
+    z-index: 5;
+    background-color: transparent;
+    transition: all 0.4s;
+}
+.navbarScroll{
+    padding: 25px;
+    background-color: #0000008a;
+    transition: all 0.4s;
+}
+.logo{
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+    background: none;
+}
+nav a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #DF6951;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+nav ul a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.active::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+nav button{
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 30px;
+    background-color: #DF6951;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.menuIcon{
+    display: none;
+    background:none;
+    padding: 0;
+    height: 24px;
+    cursor: pointer;
+}
+.resMenu{
+    position: fixed;
+    top: 20px;
+    right: -100%;
+    height: 100vh;
+    width: 246px;
+    display: none;
+    background-color: #FFF;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 25px;
+    transition: 0.5s ease-in-out;
+}
+.resMenu a{
+    color: #000;
+}
+.closeMenu{
+    background:none;
+    padding: 0;
+    font-weight: 400;
+    font-size: 30px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+.closeMenu img{
+    background:none;
+}
+@media screen and ( max-width : 992px ) {
+    nav{padding: 40px 20px;}
+    nav .logo{width: 120px;}
+    nav ul,nav #btnNav{display: none;}
+    .menuIcon{display: block;}
+    .resMenu{display: flex;}
+}

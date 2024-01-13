@@ -1,0 +1,47 @@
+.s6{
+    display: flex;
+    padding: 100px 70px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.s6 .s4infos{
+    gap: 10px;
+}
+.s6 .sectionDescreption{
+    max-width: 665px;
+}
+.s6 .numbersContainer{
+    display: flex;
+    gap: 30px;
+}
+.s6 .numbersContainer p{
+    color: #7D7D7D;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+.s6 .numbersContainer h2{
+    color: #181E4B;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+.s6 .numbers{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+}
+.s6container{
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and ( max-width : 992px ) {
+    .s6{padding: 40px 20px; flex-direction: column-reverse; gap: 55px;}
+    .s6 img{max-width: 400px; width: 90vw;}
+    .s6 .numbersContainer{gap: 30px; justify-content: center;}
+    .s6 img{width: 90vw; max-width: 360px;}
+}

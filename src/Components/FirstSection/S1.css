@@ -1,0 +1,32 @@
+.s1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 100px 70px;
+}
+.sectionTitle{
+    color: #DF6951;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.selectionBig{
+    color: #1E1D4C;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+.container{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 65px;
+}
+@media screen and ( max-width : 992px ) {
+    .s1{padding: 40px 20px;}
+    .container{ flex-wrap: wrap; gap: 50px; margin-top: 50px;}
+    .selectionBig{font-size: 30px;}
+}

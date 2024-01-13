@@ -1,0 +1,11 @@
+.s7{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 100px 0;
+}
+@media screen and ( max-width : 992px ) {
+    .s7{padding: 40px 20px;}
+}

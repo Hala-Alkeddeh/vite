@@ -1,0 +1,45 @@
+.s2{
+    display: flex;
+}
+.s2title{
+    color: #FFEFEC;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+.s2bigTitle{
+    color: #FFF;
+    font-family: 'Volkhov', serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.s2bg button{
+    width: 183px;
+    height: 58px;
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    box-shadow: 0px 20px 35px 0px rgba(223, 105, 81, 0.15); 
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    background: transparent;
+    cursor: pointer;
+}
+.s2bg{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 75px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@media screen and ( max-width : 992px ) {
+    .s2bg{width: 100%;}
+    .s2{flex-direction: column;}
+    .s2bigTitle{font-size: 30px; text-align: center; width: max-content;}
+}

@@ -1,0 +1,30 @@
+.hero{
+    height: 100vh;
+    background-position: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heroTitle{
+    color: #2F2F2F;
+    width: 846px;
+    text-align: center;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 60px;
+    text-transform: capitalize;
+}
+.heroYester{
+    color: #FFF;
+    font-family: Yesteryear;
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 223.678px;
+}
+@media screen and ( max-width : 992px ) {
+    .heroTitle{ font-size: 30px; line-height: 42px; margin: 25px;}
+    .heroYester{font-size: 80px; text-align: center; line-height: normal;}
+}
